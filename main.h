@@ -16,14 +16,14 @@
 extern char **environ;
 int execute(char **comm, char **argv);
 char *get_location(char *command);
-void execute_pipe(char **cmd,int token_count);
+void execute_pipe(char **cmd, int token_count);
 int execute_command(char **comm, char **argv);
 int execute_cd(const char *dir);
 void create_pipes(int pip[][2], int pipnum);
 void close_pipes(int pip[][2], int pipnum);
 void execute_child(char **args, int i, int pip[][2], int pipnum);
 void execute_pipe(char **cmd, int pipnum);
-void execute_env();
+void execute_env(void);
 char **read_input(char *line, size_t *n);
 int run_command(char **comm, char **argv);
 #endif
