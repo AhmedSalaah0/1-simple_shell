@@ -15,7 +15,7 @@ char **args;
 
 while (1)
 {
-printf("$ ");
+printf("cisfun$ ");
 if (getline(&line, &n, stdin) == -1)
 {
 perror("getline error");
