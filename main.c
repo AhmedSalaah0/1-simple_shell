@@ -36,7 +36,7 @@ else
 execute(args, argv);
 }
 
-free (args);
+free(args);
 }
 return (0);
 }
