@@ -26,4 +26,6 @@ void execute_pipe(char **cmd, int pipnum);
 void execute_env(void);
 char **read_input(char *line, size_t *n);
 int run_command(char **comm, char **argv);
+int setenv_builtin(const char* variable, const char* value);
+int unsetenv_builtin(const char* variable);
 #endif
